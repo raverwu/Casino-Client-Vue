@@ -37,7 +37,7 @@ var chat = connection.createHubProxy('casinoHub');
 console.log('create hub');
 
 chat.on('serverResponse', function (command, json) {
-    console.log('server response: ' + command);
+    //console.log('server response: ' + command);
     // console.log(json);
     signalrEmitter.emit('serverResponse', command, json);
 

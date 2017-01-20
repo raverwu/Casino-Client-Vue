@@ -7,8 +7,8 @@
             <div class="inline info-box"> <span class="info-box-icon bg-green">和</span> <span class="info-box-number">{{ tie_win_count || 0 }}</span></div>
             <div class="inline info-box"> <span class="info-box-number">{{ table.chip_limit_time || 0 }}</span></div>
         </div>
-        <lobby-table-result class="result" :results="results"></lobby-table-result>
-        <!--<lobby-table-canvas :table_id="table.table_id"></lobby-table-canvas>-->
+        <!--<lobby-table-result class="result" :results="results"></lobby-table-result>-->
+        <lobby-table-canvas :results="results" :table_id="table.table_id"></lobby-table-canvas>
         <div :class="['status', status_text_css]">{{ status_text }}</div>
         <div :class="['trapezoid', vip_hidden_css]">VIP包台中</div>
     </div>
